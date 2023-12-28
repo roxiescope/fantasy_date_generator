@@ -110,12 +110,12 @@ class MaeveUI(QMainWindow):
         y = str(self.year.text())
         dates.append("D1" + '.' + y)
         for month in range(1, NUM_MONTHS + 1):
-            if month == 3:
+            if month == 4:
                 dates.append("D2" + '.' + y)
                 if int(int(y)/9) == int(y)/9:
                     dates.append(str("Leap." + y))
-            if month == 6:
-                dates.append("3" + '.' + y)
+            if month == 7:
+                dates.append("D3" + '.' + y)
             for week in range(1, NUM_WEEKS + 1):
                 for day in range(1, NUM_DAYS + 1):
                     temp = str(day) + '.' + str(week) + '.' + str(month) + '.' + y
